@@ -7,3 +7,5 @@ Requirements:
     <li>aiohttp_jinja2</li>
     <li>aiopg</li>
 </ul>
+
+Note: python --vresion = 3.6.4
