@@ -75,13 +75,20 @@ def sample_data(engine=test_engine):
 	conn = engine.connect()
 
 	conn.execute(question.insert(),[
-		{'question_text': 'Where are you from?', 
-		'pub_data': '2018-06-01 08:58:49.629+02'}
+		{'id': 1, 'question_text': 'Where are you from?','pub_data': '2018-06-01 11:28:41.000602'},
+		{'id': 2, 'question_text': 'Do you believe in any religion?','pub_data': '2018-06-01 14:35:26.771179'},
+		{'id': 3, 'question_text': 'What genre of film do you like?','pub_data': '2018-06-01 14:50:01.000345'}
 		])
 	conn.execute(choice.insert(),[
-		{'choice_text': 'Asia', 'votes': 0, 'question_id': 1},
-		{'choice_text': 'Europe', 'votes': 0, 'question_id': 1},
-		{'choice_text': 'USA', 'votes': 0, 'question_id': 1}
+		{'id': 1, 'choice_text': 'Asia', 'votes': 0, 'question_id': 1},
+		{'id': 2, 'choice_text': 'Europe', 'votes': 0, 'question_id': 1},
+		{'id': 3, 'choice_text': 'USA', 'votes': 0, 'question_id': 1},
+		{'id': 4, 'choice_text': 'Buddhism', 'votes': 0, 'question_id': 2},
+		{'id': 5, 'choice_text': 'Christianity', 'votes': 0, 'question_id': 2},
+		{'id': 6, 'choice_text': 'Islamism', 'votes': 0, 'question_id': 2},
+		{'id': 7, 'choice_text': 'Action', 'votes': 0, 'question_id': 3},
+		{'id': 8, 'choice_text': 'Emotion', 'votes': 0, 'question_id': 3},
+		{'id': 9, 'choice_text': 'Sci_Fiction', 'votes': 0, 'question_id': 3}
 		])
 
 	conn.close()
