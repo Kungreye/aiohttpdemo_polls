@@ -8,4 +8,8 @@ Requirements:
     <li>aiopg</li>
 </ul>
 
-Note: python --vresion = 3.6.4
+Note: python --version = 3.6.4
+
+![index](https://github.com/Kungreye/aiohttpdemo_polls/blob/master/demo_img/index.PNG)
+![poll/1](https://github.com/Kungreye/aiohttpdemo_polls/blob/master/demo_img/poll_1.PNG)
+![poll/1/results](https://github.com/Kungreye/aiohttpdemo_polls/blob/master/demo_img/poll_1_results.PNG)
